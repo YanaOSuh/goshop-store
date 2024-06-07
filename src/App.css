@@ -1,38 +1,297 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #FCF7F1;
+}
+nav {
+  background: #FCF7F1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+.link {
+  padding: 10px 40px;
+  text-decoration: none;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  letter-spacing: -2%;
+}
+.linkMain {
+  padding: 10px 40px;
+  text-decoration: none;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600px;
+  font-size: 36px;
+}
+.shopName {
+  font-weight: 600;
+  font-size: 36px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600px;
+  color: #e08cff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.shopSection {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+}
+.product-card {
+  padding: 30px;
+  flex-grow: 1;
+  flex-basis: 16%;
+}
+
+.cont {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.back {
+  background-color: #f4eddd; 
+  padding: 20px;
+  margin: 40px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.change {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+
+h3, h4 {
+  font-family: "Poppins", sans-serif;
+}
+button {
+  margin: 10px;
+}
+
+.aboutSection {
+  margin-top: 100px;
+}
+.aboutContainer {
+  background-color:  #4f4f4f;
+  height: 500px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.aboutSection-blockOne {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+.shopNameText {
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600px;
+  font-size: 36px;
+}
+.shopSlogan {
+  font-family: "Poppins", sans-serif;
+  color: #cacaca;
+  font-size: 18px;
+}
+.aboutSection-blockTwo {
+  color: #cacaca;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  gap: 180px;
+}
+.blockTwo-heading {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+.aboutSection-blockTwo-section {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+
+
+.heroSection, .aboutProductSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.heroContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1184px;
+  margin-top: 50px;
+}
+.heroTextBox {
+  display: flex;
+  flex-direction: column;
+}
+.heroHeading {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 96px;
+  line-height: 1;
+  color: black;
+}
+.heroText {
+  margin-top: 24px;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #8b8b8b;
+}
+.heroBtn {
+  margin: 24px 0 0 0;
+  border-radius: 100px;
+  border: none;
+  outline: none;
+  padding: 12px 36px;
+  width: 200px;
+  height: 60px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: -0.02em;
+  background-color: #e08cff;
+  color: black;
+  cursor: pointer;
+}
+.heroTicker {
+  padding-top: 110px;
+}
+.heroTicker-container {
+  padding: 48px 0px;
+  height: 120px;
+  width: 1696px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  overflow: hidden;
+}
+.heroTicker-container p {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: black;
+}
+.heroSalePics {
+  margin: 125px 0px;
+  display: flex;
+}
+.heroSaleBlock {
+  width: 480px;
+  height: 300px;
+}
+.saleSection {
+  background-image: url('/src/images/footerPic.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 512px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.saleSection-block {
+  display: flex;
+  flex-direction: column;
+  margin-left: 150px;
+}
+.saleSection-saleText {
+  font-weight: 600;
+  font-size: 36px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+.saleSection-saleOff {
+  font-weight: 600;
+  font-size: 96px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.saleSection-btn {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  padding: 10px;
+}
+.saleSection-btn:hover {
+  color: rgb(251, 216, 216);
+}
+.saleShipping {
+  position: relative;
+  padding-top: 40px;
+}
+.saleShipping-textOne {
+  position: absolute;
+  left: 40px;
+  top: 29px;
+  padding: 0 10px;
+  background-color: #fcf7f1;
+  font-family: "Poppins", sans-serif;
+}
+.saleShipping-textTwo {
+  position: absolute;
+  right: 40px;
+  top: 29px;
+  background: #fcf7f1;
+  font-family: "Poppins", sans-serif;
+  padding: 0 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.aboutProductContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 1184px;
+  margin: 50px 0px;
+}
+.btn {
+  border: 1px solid #e08cff;
+  border-radius: 100px;
+  padding: 5px 15px;
+  margin: 0px;
+  width: 180px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  color: #e08cff;
+  font-family: "Poppins", sans-serif;
+  background-color: transparent;
+}
+.btn:hover {
+  background-color: #e08cff;
+  color: black;
+}
+.abotProductPrice {
+  align-self: flex-end;
 }

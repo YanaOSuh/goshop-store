@@ -5,6 +5,7 @@ function Contact() {
                 <div className="aboutSection-blockOne">
                     <p className="shopNameText"><span className='shopName'>GO</span>SHOP</p>
                     <p className="shopSlogan">Complete your style with awesome <br /> clothes from us.</p>
+                    <a class="myInfo" href="https://yanaos-portfolio.glitch.me/" target="_blank">Developed by <span class="myName">YanaOS</span></a>
                 </div>
                 <div className="aboutSection-blockTwo">
                     <div className="aboutSection-blockTwo-section">

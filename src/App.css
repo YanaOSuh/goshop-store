@@ -295,3 +295,23 @@ button {
 .abotProductPrice {
   align-self: flex-end;
 }
+
+.link {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}    
+.myInfo {
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  color: #3c3c3c;
+  text-decoration: none;
+  cursor: pointer;
+}
+.myName {
+  text-decoration: none;
+  cursor: pointer;
+  color:  #2d2c2c;
+  font-weight: 500;
+}
